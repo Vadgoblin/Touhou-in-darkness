@@ -1,0 +1,10 @@
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\bin\Debug\Touhou in darkness.exe.config
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\bin\Debug\Touhou in darkness.exe
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\bin\Debug\Touhou in darkness.pdb
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\obj\Debug\Touhou in darkness.csprojAssemblyReference.cache
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\obj\Debug\Touhou_in_darkness.Form1.resources
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\obj\Debug\Touhou_in_darkness.Properties.Resources.resources
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\obj\Debug\Touhou in darkness.csproj.GenerateResource.cache
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\obj\Debug\Touhou in darkness.csproj.CoreCompileInputs.cache
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\obj\Debug\Touhou in darkness.exe
+E:\programozás\c#\Touhou in darkness\Touhou in darkness\obj\Debug\Touhou in darkness.pdb
