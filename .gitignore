@@ -1,1 +1,5 @@
 .vs/*
+desktop.ini
+
+Touhou in darkness/bin/Debug/*
+!Touhou in darkness/bin/Debug/Touhou in darkness.*
