@@ -25,6 +25,12 @@ namespace Touhou_in_darkness
         [DllImport("user32.dll", SetLastError = true)]
         internal static extern bool MoveWindow(IntPtr hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
 
+        [DllImport("USER32.DLL")]
+        public static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        [DllImport("USER32.DLL")]
+        public static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
         private void Form1_Load(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.None;
@@ -63,6 +69,10 @@ namespace Touhou_in_darkness
 
             this.Name = game.MainWindowTitle;
             this.Text = game.MainWindowTitle;
+
+            //making borderless
+            int style = GetWindowLong(game.MainWindowHandle, -16);
+            SetWindowLong(game.MainWindowHandle, -16, (style & ~(0x00800000 | 0x00400000)));
 
             var ard = CalcGameSizeAndPos();//AutoResData
             MoveWindow(game.MainWindowHandle, ard[0], ard[1], ard[2], ard[3],true);
