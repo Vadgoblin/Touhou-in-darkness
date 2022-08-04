@@ -34,7 +34,7 @@ namespace Touhou_in_darkness
         private void Form1_Load(object sender, EventArgs e)
         {
             FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
+            WindowState = FormWindowState.Minimized;
 
             string[] findth = Directory.GetFiles(".", "Touhou??.exe");
 
@@ -54,11 +54,12 @@ namespace Touhou_in_darkness
                 foreach (Process proc in processes)
                 {
                     var mwts = proc.MainWindowTitle.Split(' ');
-                    if (mwts[0].ToLower() == "touhou" && mwts.Length > 2 && proc.StartTime > Process.GetCurrentProcess().StartTime) game = proc;
+                    if (mwts[0].ToLower() == "touhou" && mwts.Length > 2 && proc.StartTime > Process.GetCurrentProcess().StartTime && mwts[1].ToLower()!="community") game = proc;
                 }
             }
 
             Cursor.Hide();
+            WindowState = FormWindowState.Maximized;
             SetParent(game.MainWindowHandle, this.Handle);
 
             try
