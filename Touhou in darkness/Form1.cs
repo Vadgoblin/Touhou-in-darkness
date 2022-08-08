@@ -33,8 +33,9 @@ namespace Touhou_in_darkness
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Visible = false;
             FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Minimized;
+            WindowState = FormWindowState.Maximized;
 
             string[] findth = Directory.GetFiles(".", "Touhou??.exe");
 
@@ -59,6 +60,8 @@ namespace Touhou_in_darkness
             }
 
             Cursor.Hide();
+            WindowState = FormWindowState.Minimized;
+            Visible = true;
             WindowState = FormWindowState.Maximized;
             SetParent(game.MainWindowHandle, this.Handle);
 
